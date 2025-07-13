@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Language Detection</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
             padding: 0;
-            background: #f0f4f8;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e0ecff, #f7f9fc);
+            font-family: 'Roboto', Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,30 +22,65 @@
 
         .container {
             text-align: center;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 50px rgba(0, 123, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #007BFF;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 15px;
         }
 
         img {
             width: 640px;
             height: auto;
-            border: 4px solid #007BFF;
-            border-radius: 8px;
-            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+            border: 5px solid #007BFF;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.25);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.02);
         }
 
         @media (max-width: 700px) {
             img {
                 width: 100%;
             }
+
+            .container {
+                padding: 25px 15px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <h1>Real-Time Sign Language Detector</h1>
         <img src="{{ url_for('video_feed') }}" alt="Real-Time Video Feed">
+        <p>BECS 32253 - INTELLIGENT SYSTEMS</p>
     </div>
 </body>
 </html>
