@@ -18,10 +18,7 @@ env/
 Thumbs.db
 
 runs/
-datayolo8/
-*.csv
-*.tsv
-*.json
+
 
 # Model files 
 *.h5
