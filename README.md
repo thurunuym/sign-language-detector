@@ -29,4 +29,4 @@ Born from a collaboration between four university friends, AppWhiz is our first 
 
 ## ◻️ Deployment
 
-This application is deployed on **Vercel**, which provides a seamless and efficient CI/CD (Continuous Integration/Continuous Deployment) pipeline. Any push to the `main` branch automatically triggers a new deployment, ensuring the live version is always up-to-date with the latest code.
+This application is deployed on **Vercel**
