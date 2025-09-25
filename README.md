@@ -99,12 +99,8 @@ This script launches a Flask server and streams your webcam with real-time sign 
 ---
 
 
-## 📌 Tips for Better Accuracy
-
-- Train with more diverse and balanced images per class.
-- Use data augmentation (e.g., rotation, brightness).
-- Try a larger model like yolov8s.pt or yolov8m.pt for better performance.
 - Use GPU for faster real-time inference
+
 ---
 
 
